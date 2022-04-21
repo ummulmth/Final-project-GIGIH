@@ -21,7 +21,9 @@ const playlistSlice = createSlice({
 			state.selectedTracks.push(action.payload);
 		},
 		substractSelectedTracks: (state, action) => {
-			const index = state.selectedTracks.indexOf(action.payload);
+			const index = state.selectedTracks.findIndex(
+				(track) => track.uri === action.payload
+			);
 			state.selectedTracks.splice(index, 1);
 		},
 		setFormTitle: (state, action) => {
@@ -47,6 +49,7 @@ export const {
 	clearSelectedTracks,
 	setFormTitle,
 	setFormDescription,
+	clearForm,
 	clearState,
 } = playlistSlice.actions;
 

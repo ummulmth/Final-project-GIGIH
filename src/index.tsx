@@ -1,15 +1,16 @@
-import React from 'react';
+// import React from 'react';
 import ReactDOM from "react-dom";
 import App from './App';
+import "./index.css";
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
-import theme from './utils_theme';
-import store from './store';
+import theme from "./utils_theme";
+import store from "./store";
 import { Provider as ReduxProvider } from 'react-redux';
 
 ReactDOM.render(
   <ReduxProvider store={store}>
-    <ChakraProvider theme={theme}>
+    <ChakraProvider resetCSS theme={theme}>
       <App />
     </ChakraProvider>
   </ReduxProvider>,
