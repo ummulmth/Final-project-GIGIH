@@ -1,7 +1,7 @@
 import Landing from "./pages/LandingPage";
 import CreatePlaylist from "./pages/CreatePlaylist";
 import Header from "./component/Header";
-import NewReleases from "./pages/new-releases";
+import NewReleases from "./pages/NewRealease";
 import { useAppSelector } from "./store";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Sidebar from "./component/sideBar";
