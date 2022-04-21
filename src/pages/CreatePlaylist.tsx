@@ -20,7 +20,7 @@ const CreatePlaylist = () => {
 	return (
 		<Box w={"100%"} p={"2rem"}>
 			<Flex align="center" justify="space-between">
-				<Heading as="h2" size="lg">
+				<Heading as="h1" size="lg">
 					Create Playlist
 				</Heading>
 				<Center>

@@ -9,14 +9,13 @@ import {
   Button,
   useColorMode,
 } from "@chakra-ui/react";
-// import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 import { FaSpotify } from "react-icons/fa";
 import { authorize } from "../libs/spotify";
 import { useAuth } from "../libs/auth";
 
 const Landing = () => {
   const { colorMode } = useColorMode();
-//   useAuth();
+  useAuth();
 
   return (
     <Box maxW="100vw">
