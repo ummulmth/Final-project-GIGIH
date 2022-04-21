@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import { useAppSelector } from "../store";
-import Track from "./track";
+import Track from "./Track";
 
 const TrackList = () => {
 	const { tracks } = useAppSelector((state) => state.playlist);

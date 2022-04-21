@@ -1,3 +1,4 @@
+import { Box, Wrap, Text } from "@chakra-ui/layout";
 import {
 	Tag,
 	FormControl,
@@ -22,9 +23,9 @@ import {
 	setFormTitle,
 	setFormDescription,
 } from "../store/playlist";
+import { useAppDispatch, useAppSelector } from "../store";
 import { postPlaylist, postPlaylistTracks } from "../libs/spotify";
 import * as React from "react";
-import { useAppDispatch, useAppSelector } from "../store";
 
 const CreatePlaylistModal = ({
 	isOpen,
@@ -40,6 +41,7 @@ const CreatePlaylistModal = ({
 
 	const handleSubmit: React.FormEventHandler<HTMLButtonElement> = (e) => {
 		e.preventDefault();
+
 		const { title, description } = form;
 		const uris = selectedTracks.map((track) => track.uri);
 
@@ -56,6 +58,7 @@ const CreatePlaylistModal = ({
 				status: "error",
 			});
 		}
+
 		postPlaylist(accessToken, user?.id as string, {
 			name: title,
 			description: description,
@@ -134,12 +137,5 @@ const SelectedTracks = () => {
 		</Box>
 	);
 };
-
-/* const getArtistsText = (array) => {
-  return array.map((item, index) => {
-    const isLast: boolean = index === array.length - 1
-    return artist.name + (isLast ? '' : ', ')
-  })
-} */
 
 export default CreatePlaylistModal;
