@@ -24,6 +24,7 @@ export interface AlbumsResponse {
 }
 
 export interface TracksResponseData {
+	[x: string]: any;
 	href: string;
 	items: Track[];
 	limit: number;
