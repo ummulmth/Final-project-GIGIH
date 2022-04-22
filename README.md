@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Gigih Playlist
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project for Final Project Generasi Gigih Batch 2 in FrontEnd track [Generasi Gigih](https://www.anakbangsabisa.org/generasi-gigih/program). This is a music web application that intergated with Spotify API.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+-**Login** using your spotify developers account 🔊
+-Search your favorite music using **Search music** feature 🔍
+-**Create playlist** from your favorite music 🎧
+-**New Realease** for discover new music 💕
+-**Switch Theme** Dark/Light mode 🌚🌞
 
-### `npm start`
+## Build using
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Create React App](https://create-react-app.dev/) to initialize the project.
+- [Typescript](https://typescriptlang.org).
+- [Jest](https://jestjs.io/), [react testing-library](https://testing-library.com/) and [msw](https://mswjs.io/) for testing the UI and implementation.
+- [Chakra-ui](https://chakra-ui.com/guides/first-steps) and [Framer/motion](https://www.framer.com/motion/) to make the user interface.
+- [React redux](https://react-redux.js.org/) for state management (store).
+- Deploy using [Vercel](https://vercel.com/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+This is the step if you want to run this project on your own
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Run App
 
-### `npm run build`
+1. Clone this repository
+```
+git clone https://github.com/ummulmth/Final-project-GIGIH
+```
+2. Open the project directory folder from your command prompt or Git Bash
+```bash
+    cd Final-project-GIGIH
+```
+3. Installing the packages
+```
+npm install
+```
+4. Setup the [environment variable]() to run this project.
+5. Start the server
+```
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run Test
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can launch the test runner by using
+### `npm run test`
 
-### `npm run eject`
+## Environment Variable
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You have to set the `.env` file to add environment variable to run this project
+-Create the `.env` file.
+-Update your `.env` 
+```
+REACT_APP_CLIENT_ID = Your clienT id from [Spotify Developer](https://developer.spotify.com/dashboard/login) account
+```
