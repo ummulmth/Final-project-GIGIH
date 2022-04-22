@@ -56,5 +56,5 @@ You have to set the `.env` file to add environment variable to run this project
 - Create the `.env` file.
 - Update your `.env` 
 ```
-REACT_APP_CLIENT_ID = Your clienT id from [Spotify Developer](https://developer.spotify.com/dashboard/login) account
+REACT_APP_CLIENT_ID = Your client id from Spotify Developer account
 ```
