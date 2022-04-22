@@ -4,11 +4,11 @@ This project for Final Project Generasi Gigih Batch 2 in FrontEnd track [Generas
 
 ## Features
 
--**Login** using your spotify developers account 🔊
--Search your favorite music using **Search music** feature 🔍
--**Create playlist** from your favorite music 🎧
--**New Realease** for discover new music 💕
--**Switch Theme** Dark/Light mode 🌚🌞
+- **Login** using your spotify developers account 🔊
+- Search your favorite music using **Search music** feature 🔍
+- **Create playlist** from your favorite music 🎧
+- **New Realease** for discover new music 💕
+- **Switch Theme** Dark/Light mode 🌚🌞
 
 ## Build using
 
@@ -31,7 +31,7 @@ git clone https://github.com/ummulmth/Final-project-GIGIH
 ```
 2. Open the project directory folder from your command prompt or Git Bash
 ```bash
-    cd Final-project-GIGIH
+cd Final-project-GIGIH
 ```
 3. Installing the packages
 ```
@@ -53,8 +53,8 @@ You can launch the test runner by using
 ## Environment Variable
 
 You have to set the `.env` file to add environment variable to run this project
--Create the `.env` file.
--Update your `.env` 
+- Create the `.env` file.
+- Update your `.env` 
 ```
 REACT_APP_CLIENT_ID = Your clienT id from [Spotify Developer](https://developer.spotify.com/dashboard/login) account
 ```
