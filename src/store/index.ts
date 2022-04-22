@@ -7,10 +7,10 @@ export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 
 const store = configureStore({
-	reducer: {
-		auth: authReducer,
-		playlist: playlistReducer,
-	},
+  reducer: {
+    auth: authReducer,
+    playlist: playlistReducer,
+  },
 });
 
 export const useAppDispatch = () => useDispatch<AppDispatch>();

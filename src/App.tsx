@@ -11,23 +11,23 @@ function App() {
   const { isAuthenticated } = useAppSelector((state) => state.auth);
   return (
     <BrowserRouter>
-			<Header />
-				{<Sidebar />}
-				<Grid as={"main"} templateColumns={isAuthenticated ? "1fr 4fr" : "1fr"}>
-				{isAuthenticated && <Sidebar />}
-				<Switch>
-					<Route exact path="/create-playlist">
-						{isAuthenticated ? <CreatePlaylist /> : <Redirect to="/" />}
-					</Route>
-					<Route exact path="/new-releases">
-						{isAuthenticated ? <NewReleases /> : <Redirect to="/" />}
-					</Route>
-					<Route exact path="/">
-						<Landing />
-					</Route>
-				</Switch>
-			</Grid>
-		</BrowserRouter>
+      <Header />
+      {<Sidebar />}
+      <Grid as={"main"} templateColumns={isAuthenticated ? "1fr 4fr" : "1fr"}>
+        {isAuthenticated && <Sidebar />}
+        <Switch>
+          <Route exact path="/create-playlist">
+            {isAuthenticated ? <CreatePlaylist /> : <Redirect to="/" />}
+          </Route>
+          <Route exact path="/new-releases">
+            {isAuthenticated ? <NewReleases /> : <Redirect to="/" />}
+          </Route>
+          <Route exact path="/">
+            <Landing />
+          </Route>
+        </Switch>
+      </Grid>
+    </BrowserRouter>
   );
 }
 

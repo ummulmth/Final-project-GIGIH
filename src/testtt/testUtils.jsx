@@ -8,23 +8,23 @@ import playlistReducer from "../store/playlist";
 import authReducer from "../store/auth";
 
 const customRender = (
-	ui,
-	{
-		preloadedState,
-		store = configureStore({
-			reducer: { auth: authReducer, playlist: playlistReducer },
-			preloadedState,
-		}),
-		...renderOptions
-	} = {}
+  ui,
+  {
+    preloadedState,
+    store = configureStore({
+      reducer: { auth: authReducer, playlist: playlistReducer },
+      preloadedState,
+    }),
+    ...renderOptions
+  } = {}
 ) => {
-	const Providers = ({ children }) => (
-		<ReduxProvider store={store}>
-			<ChakraProvider>{children}</ChakraProvider>
-		</ReduxProvider>
-	);
+  const Providers = ({ children }) => (
+    <ReduxProvider store={store}>
+      <ChakraProvider>{children}</ChakraProvider>
+    </ReduxProvider>
+  );
 
-	return render(ui, { wrapper: Providers, ...renderOptions });
+  return render(ui, { wrapper: Providers, ...renderOptions });
 };
 
 export * from "@testing-library/react";
