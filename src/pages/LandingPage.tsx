@@ -40,7 +40,7 @@ const Landing = () => {
           </Box>
         </Flex>
         <Center>
-          <Image src="/Gigih Playlist.png" borderRadius='full' boxSize='400px'/>
+          <Image src="/GigihPlaylist.png" borderRadius='full' boxSize='400px'/>
         </Center>
       </Grid>
       <Center
