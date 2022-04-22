@@ -28,13 +28,10 @@ const Landing = () => {
       >
         <Flex direction={"column"} justify={"center"}>
           <Heading as={"h1"} fontSize={"6xl"}>
-            Listen your Music
+            Create Your Own Playlist
           </Heading>
           <Text my={4} color={"gray.400"}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            similique nobis atque fuga, quasi omnis odit sunt placeat magni
-            voluptate ratione incidunt quas ad blanditiis, soluta vitae aut
-            velit. Magni.
+            Gigih Music Playlist Adalah Final Project Yang Dibuat Dengan Sepenuh Hati Untuk Si GIGIH.
           </Text>
           <Box>
             <Button size={"lg"} leftIcon={<FaSpotify />} onClick={authorize}>
@@ -43,7 +40,7 @@ const Landing = () => {
           </Box>
         </Flex>
         <Center>
-          <Image src={"https://picsum.photos/500"} />
+          <Image src="/Gigih Playlist.png" borderRadius='full' boxSize='400px'/>
         </Center>
       </Grid>
       <Center
@@ -51,7 +48,7 @@ const Landing = () => {
         h={"10vh"}
         bg={colorMode === "light" ? "gray.300" : "gray.800"}
       >
-        Made with 💛 by ayang
+        Made with 💛 by creator
       </Center>
     </Box>
   );
